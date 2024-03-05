@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="div-form">
+        <h2>Reserva de habitacion en hotel</h2>
+        <form action="" method="get"> 
+            <div class="datos-personales">
+                <h3>Datos personales</h3>
+                <div>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido(s):</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </div>
+                </div>
+            </div>
+            <div class="datos-reserva">
+                <h3>Datos de la reserva</h3>
+                <div>
+                    <div class="div-adultos">
+                        <label for="adultos">Adultos:</label>
+                        <input type="number" name="adultos" id="adultos" min="2" placeholder="2">
+                    </div>
+                    <div class="div-niños">
+                        <label for="niños">Niños:</label>
+                        <input type="number" name="niños" id="niños" min="0" placeholder="0">
+                    </div>
+                </div>
+            </div>
+            <div class="datos-comida">
+                <h3>Régimen de comidas</h3>
+                <br>
+                <div class="div-comidas">
+                <input type="radio" name="comidas" id="radio1" value="Solo desayuno">
+                <label for="radio1">Solo desayuno</label>
+                <br>
+                <input type="radio" name="comidas" id="radio2" value="Media pensión">
+                <label for="radio2">Media pensión</label>
+                <br>
+                <input type="radio" name="comidas" id="radio3" value="Pensión completa">
+                <label for="radio3">Pensión completa</label>
+                </div>
+                <br>
+            </div>
+            <div class="div-botones">
+                <button class="boton-reservar" onclick="mostrarReserva()">Reservar</button>
+                <button class="boton-borrar">Borrar campos</button>
+            </div>
+        </form>
+     </div>
+    </section>
+<script src="js/script.js"></script>
+</body>
+</html>
